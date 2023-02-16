@@ -19,9 +19,7 @@ const cleanupDeployWorkflow = (deployWorkflow, deployWorkflowPath) => {
 };
 
 const cleanupRemixConfig = (remixConfig, remixConfigPath) => {
-  const newRemixConfig = remixConfig
-    .replace("server.ts", "server.js")
-    .replace("create-user.ts", "create-user.js");
+  const newRemixConfig = remixConfig.replace("server.ts", "server.js");
 
   return [fs.writeFile(remixConfigPath, newRemixConfig)];
 };
