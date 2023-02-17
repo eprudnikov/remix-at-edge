@@ -14,10 +14,14 @@
 
 # misc
 .DS_Store
+/tmp
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Arc output
+/sam.*
 
 # IDE exclusion
 /.vscode
