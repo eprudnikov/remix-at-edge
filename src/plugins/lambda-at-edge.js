@@ -20,8 +20,9 @@ module.exports = {
       };
       cloudformation.Resources.AnyCatchallHTTPLambda.Properties.Events =
         undefined;
-      // TODO try to define ref to a role as parameter instead of undefining it everywhere
-      cloudformation.Resources.AnyCatchallHTTPLambda.Properties.Environment.Variables.ARC_ROLE =
+
+      // Remove env variables because Lambda@Edge cannot have it
+      cloudformation.Resources.AnyCatchallHTTPLambda.Properties.Environment.Variables =
         undefined;
 
       // Disable some default resources (setting null doens't work). Hope, there is a better way of doing it.

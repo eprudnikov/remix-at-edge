@@ -19,10 +19,10 @@ module.exports = {
 
       let appDir = path.join(__dirname, "app");
 
-      route(
-        "__tests/create-user",
-        path.relative(appDir, "cypress/support/test-routes/create-user.ts")
-      );
+      // route(
+      //   "__tests/create-user",
+      //   path.relative(appDir, "cypress/support/test-routes/create-user.ts")
+      // );
     });
   },
 };
